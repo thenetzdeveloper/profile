@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+
+*::selection {
+  background: var(--green);
+  color: green;
+}
+
+:root {
+  --green: pink;
+}
+
+.heading {
+  font-size: 3rem;
+  color: var(--green);
+  padding-left: 1rem;
+  border-left: 0.4rem solid var(--green);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+section {
+  padding: 1.0rem 10%;
+}
+
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+.btn:hover {
+  background: white;
+}
+
+.header-1,
+.header-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  background: var(--green);
+}
+
+.header-1 {
+  border-bottom: 0.2rem solid black;
+}
+
+.header-1 span {
+  font-weight: lighter;
+  color: #dd0b0b;
+  font-size: 1.7rem;
+}
+
+.header-1 a {
+  padding: 0.10rem;
+  color: black;
+  font-size: 5rem;
+}
+
+.header-1 a:hover {
+  color: green;
+}
+
+.header-2 .logo {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.header-2 .logo i {
+  color: yellow;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.header-2 .logo span {
+  color: green;
+}
+
+/*photo*/
+
+.Category .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.Category .box-container .box {
+  position: relative;
+  flex: 1 1 23rem;
+  height: 35rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem pink;
+  border: 0.05rem solid pink;
+}
+
+.Category .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Category .box-container .box:hover img {
+  transform: scale(1.2);
+}
+
+.Category .box-container .box .content {
+  position: absolute;
+  bottom: -5.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.Category .box-container .box:hover .content {
+  bottom: 0;
+}
+
+.Category .box-container .box .content h3 {
+  color: pink;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.Category .box-container .box .content .btn {
+  margin-bottom: 1.3rem;
+}
+
+/*FOOTER*/
+
+.footer {
+  background: var(--green);
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box p {
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 0.2rem solid black;
+  text-align: center;
+  font-weight: normal;
+}
+
+.footer .credit span {
+  color: green;
+}
+
+.animated-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.animated-text.visible {
+  opacity: 1;
+}
+
+.card:hover .submit {
+  transform: translateZ(55px);
+  -webkit-transform: translateZ(55px);
+  -moz-transform: translateZ(55px);
+  -ms-transform: translateZ(55px);
+  -o-transform: translateZ(55px);
+}
+
+.submit {
+  width: 100%;
+  padding: 0.7rem;
+  text-align: center;
+  border: none;
+  background: var(--gradient);
+  color: #000000;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+
+.submit:hover {
+  transform: translateZ(55px) scale(1.05) !important;
+  -webkit-transform: translateZ(55px) scale(1.05) !important;
+  -moz-transform: translateZ(55px) scale(1.05) !important;
+  -ms-transform: translateZ(55px) scale(1.05) !important;
+  -o-transform: translateZ(55px) scale(1.05) !important;
+}
+
+.submit:active {
+  transition: all 0.01s;
+  transform: translateZ(55px) scale(0.9) !important;
+  -webkit-transform: translateZ(55px) scale(0.9) !important;
+  -moz-transform: translateZ(55px) scale(0.9) !important;
+  -ms-transform: translateZ(55px) scale(0.9) !important;
+  -o-transform: translateZ(55px) scale(0.9) !important;
+  -webkit-transition: all 0.01s;
+  -moz-transition: all 0.01s;
+  -ms-transition: all 0.01s;
+  -o-transition: all 0.01s;
+}
